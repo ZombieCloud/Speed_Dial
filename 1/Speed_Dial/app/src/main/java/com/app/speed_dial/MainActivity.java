@@ -5,14 +5,16 @@ import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
 
-    Button button_1;
-    Button button_2;
-    Button button_3;
+    ImageButton imButton_1;
+    ImageButton imButton_2;
+    ImageButton imButton_3;
+    ImageButton imButton_4;
+    ImageButton imButton_5;
 
 
     @Override
@@ -20,35 +22,51 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button_1 = (Button) findViewById(R.id.button1);
-        button_2 = (Button) findViewById(R.id.button2);
-        button_3 = (Button) findViewById(R.id.button3);
+        imButton_1 = (ImageButton) findViewById(R.id.imageButton1);
+        imButton_2 = (ImageButton) findViewById(R.id.imageButton2);
+        imButton_3 = (ImageButton) findViewById(R.id.imageButton3);
+        imButton_4 = (ImageButton) findViewById(R.id.imageButton4);
+        imButton_5 = (ImageButton) findViewById(R.id.imageButton5);
     }
 
 
 
-    public void button_1_OnClick(View v) throws InterruptedException{
-        //Максим
+    //Максим
+    public void imageButton1_OnClick(View v) throws InterruptedException{
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:0978152009" ));
         startActivity(intent);
     }
 
 
+    //Максим
+    public void imageButton2_OnClick(View v) throws InterruptedException{
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:0688725860" ));
+        startActivity(intent);
+    }
 
-    public void button_2_OnClick(View v) throws InterruptedException{
-        //Катя
+
+    //Катя
+    public void imageButton3_OnClick(View v) throws InterruptedException{
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:0684078920"));
         startActivity(intent);
     }
 
 
-
-    public void button_3_OnClick(View v) throws InterruptedException{
-        //Андрей
+    //Андрей
+    public void imageButton4_OnClick(View v) throws InterruptedException{
         Intent intent = new Intent(Intent.ACTION_CALL);
         intent.setData(Uri.parse("tel:0503401038" ));
+        startActivity(intent);
+    }
+
+
+    //Вита
+    public void imageButton5_OnClick(View v) throws InterruptedException{
+        Intent intent = new Intent(Intent.ACTION_CALL);
+        intent.setData(Uri.parse("tel:0976392540" ));
         startActivity(intent);
     }
 
