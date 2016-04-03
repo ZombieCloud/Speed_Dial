@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
     //Вита
     public void imageButton5_OnClick(View v) throws InterruptedException{
         Intent intent = new Intent(Intent.ACTION_CALL);
-        intent.setData(Uri.parse("tel:0976392540" ));
+        intent.setData(Uri.parse("tel:0962559354" ));
         startActivity(intent);
     }
 
